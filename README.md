@@ -1,6 +1,6 @@
 # Simple Arduino Pen Plotter
 
-A bit of fun with servos. *Details will appear here of design/construction, a bit more background will be in a blog post.*
+A bit of fun with servos. *Details will appear here of design/construction, a bit more background will be in a [blog post](https://dannyayers.wordpress.com/2021/03/01/simple-drawing-robot-python-sums-weirdness/).*
 
 ## Status
 
