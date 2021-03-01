@@ -4,7 +4,14 @@ A bit of fun with servos. *Details will appear here of design/construction, a bi
 
 ## Status
 
-**2021-02-01** I've made a first prototype of the hardware. This revealed quite a few issues both hardware & software-related. To proceed I'm now working on the calculations (ie. (Robot Kinematics)[https://en.wikipedia.org/wiki/Robot_kinematics]).
+**2021-02-01** I've made a first prototype of the hardware. This revealed quite a few issues both hardware & software-related. I'm now working on the calculations (ie. (Robot Kinematics)[https://en.wikipedia.org/wiki/Robot_kinematics]).
+
+It's really obvious that the (SG90s) servos need a lot more current that the Arduino alone can supply. I've got a little linear PSU from a wall plug hooked up right now, still probably not quite enough.
+
+The *guesswork* code I tried to drive the code was pretty hopeless. A big issue seems to be the timing, making small changes so it doesn't drop into a (high current) stall condition (the cure is known as *servo easing*, apparently).
+
+But I'm taking a step back, do some simulation to guide redesign of the hardware.
+
 
 ## Design
 
