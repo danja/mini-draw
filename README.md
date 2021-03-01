@@ -6,6 +6,8 @@ A bit of fun with servos. *Details will appear here of design/construction, a bi
 
 **2021-02-01** I've made a first prototype of the hardware. This revealed quite a few issues both hardware & software-related. To proceed I'm now working on the calculations (ie. (Robot Kinematics)[https://en.wikipedia.org/wiki/Robot_kinematics]).
 
+## Design
+
 The obvious way of making a plotter is with stepper motors driving linear screws for the X-Y axes & one servo to lift the pen. But searching around I found a servo-based design that seemed a lot more interesting, a [Mini Drawing Bot](https://www.instructables.com/Mini-Drawing-Bot-Live-Android-App-Trignomentry/) by [Jegatheesan Soundarapandian](https://www.instructables.com/member/jegatheesan.soundarapandian/). (He also has made a truly wonderful little [walking robot](https://www.instructables.com/Baby-MIT-Cheetah-Robot-V2-Autonomous-and-RC/) using the same mechanism as the drawing bot for each leg).
 
 *If I was to make a drawing robot designed to be practical but inexpensive compared to full-on ball & screw systems, I'd follow the ingenious technique from one of the authors of the paper referred to below, described in [Study and Design of Control Belt Driven 2D CNC Systems](https://www.academia.edu/13297276/STUDY_DESIGN_AND_CONTROL_BELT_DRIVEN_2_D_CNC_SYSTEMS)* [T.S. Dinh Le and C.B. Pham, 2013]
