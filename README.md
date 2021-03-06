@@ -1,17 +1,14 @@
 # Simple Arduino Pen Plotter
 
-A bit of fun with servos. *Details will appear here of design/construction, a bit more background will be in a [blog post](https://dannyayers.wordpress.com/2021/03/01/simple-drawing-robot-python-sums-weirdness/).*
+A [SCARA](https://en.wikipedia.org/wiki/SCARA) robot using an Arduino, servos and hand cut aluminium sheet. 
+
+*Details will appear here of design/construction, a bit more background will be in a [blog post](https://dannyayers.wordpress.com/2021/03/01/simple-drawing-robot-python-sums-weirdness/).*
 
 ## Status
 
-**2021-02-01** I've made a first prototype of the hardware. This revealed quite a few issues both hardware & software-related. I'm now working on the calculations (ie. (Robot Kinematics)[https://en.wikipedia.org/wiki/Robot_kinematics]).
+More details in [devlog.md](devlog.md)
 
-It's really obvious that the (SG90s) servos need a lot more current that the Arduino alone can supply. I've got a little linear PSU from a wall plug hooked up right now, still probably not quite enough.
-
-The *guesswork* code I tried to drive the code was pretty hopeless. A big issue seems to be the timing, making small changes so it doesn't drop into a (high current) stall condition (the cure is known as *servo easing*, apparently).
-
-But I'm taking a step back, do some simulation to guide redesign of the hardware.
-
+**2021-03-06** Made a rough prototype, played with some of the calculations to simulate behaviour, ordered some more parts...
 
 ## Design
 
@@ -67,9 +64,6 @@ The calculations are quite long-winded so my guess was the distortion was down t
 ![forward](https://github.com/danja/mini-draw/blob/main/images/imprecise.png?raw=true)
 
 **Ok, whatever.** I think I'll leave that bit there, have a crack at coding the inverse kinematics. Might be interesting to see what happens if I do forward-then-inverse, see what distortion appears there.
-
-
-
 
 https://en.wikipedia.org/wiki/Five-bar_linkage
 
