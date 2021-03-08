@@ -34,6 +34,8 @@ plt.grid(True)
 two = mpf(2)
 print(type(two))
 
+xMin, xMax, yMin, yMax = 0 
+
 for angleL in anglesL:
     for angleR in anglesR:
         E = two*radius*(base+humerus*(mpmath.cos(angleR)-mpmath.cos(angleL)))
