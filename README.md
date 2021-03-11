@@ -10,7 +10,7 @@ More details in [devlog.md](devlog.md)
 
 **2021-03-11** After making a very rough first prototype which flagged up loads of little problems, I've started working on another version taking these into account.
 
-I've not used any CAD for years so in the interests of speed I hand-drew a template for the new arms.
+I've not used any CAD for years so in the interests of speed I hand-drew a ![template](https://github.com/danja/mini-draw/blob/main/images/arms-design_2021-03-11.pdf) for the new arms, currently making these.
 
 ## Design
 

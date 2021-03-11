@@ -2,10 +2,16 @@
 
 **2021-03-11**
 
-I found a good paper Development of a Five-Bar Parallel Robot with Large Workspace. Here (and in other designs I found online) they talk about the arm lengths being about the same. There's a video of their machine working and it's notable in that the servos are mounted *above* the arms (workspace below), significantly increasing the available workspace size.
+I found a good paper [Development of a Five-Bar Parallel Robot with Large Workspace](https://github.com/danja/mini-draw/blob/main/references/dextar.pdf). Here (and in other designs I found online) they talk about the arm lengths being about the same. There's a video of their machine working and it's notable in that the servos are mounted *above* the arms (workspace below), significantly increasing the available workspace size.
 I'm not going to bother with that.
 
+From initial experiments I reckon there'll be adequate power in the SG90s servos to support 120mm arms, given the use of bearings and vertical supports and more sturdy construction overall. 
 
+I've made a start on making some, [template](https://github.com/danja/mini-draw/blob/main/images/arms-design_2021-03-11.pdf), current state:
+
+![work-in-progress](https://github.com/danja/mini-draw/blob/main/images/arms-v2-rough.jpeg)
+
+I've a rough idea of what to do for supports, a little trial & error will again be needed. I'll start by using the existing pen lifter but this will almost certainly need replacing, it's quite wobbly.
 
 **2021-03-09**
 
