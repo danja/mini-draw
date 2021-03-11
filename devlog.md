@@ -7,6 +7,8 @@ I'm not going to bother with that.
 
 From initial experiments I reckon there'll be adequate power in the SG90s servos to support 120mm arms, given the use of bearings and vertical supports and more sturdy construction overall. 
 
+I'm not sure yet what distance to use for the spacing between the servo axes, I'll have a play around once I've made the new arms.
+
 I've made a start on making some, [template](https://github.com/danja/mini-draw/blob/main/images/arms-design_2021-03-11.pdf), current state:
 
 ![work-in-progress](https://github.com/danja/mini-draw/blob/main/images/arms-v2-rough.jpeg)

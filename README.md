@@ -12,7 +12,7 @@ More details in [devlog.md](devlog.md)
 
 I also played around with [simulating the forward kinematics](https://github.com/danja/mini-draw/tree/main/sums). (in Python).
 
-I've not used any CAD for years so in the interests of speed I hand-drew a ![template](https://github.com/danja/mini-draw/blob/main/images/arms-template_2021-03-11.pdf) for the new arms, currently making these.
+I've not used any CAD for years so in the interests of speed I hand-drew a [template](https://github.com/danja/mini-draw/blob/main/images/arms-template_2021-03-11.pdf) for the new arms, currently making these.
 
 This is the first prototype: 
 
