@@ -1,5 +1,17 @@
 ## Mini Drawing Robot Dev Log
 
+**2021-03-11**
+
+I found a good paper Development of a Five-Bar Parallel Robot with Large Workspace. Here (and in other designs I found online) they talk about the arm lengths being about the same. There's a video of their machine working and it's notable in that the servos are mounted *above* the arms (workspace below), significantly increasing the available workspace size.
+I'm not going to bother with that.
+
+
+
+**2021-03-09**
+
+Reckon I'm going to pull out the (angleA, angleB) => (x, y) function out of Andrés Zibula's code, refactor it as a function taking & returning a std:pair.
+I find it notable he used the Arduino IDE. I'm increasingly convinced it encourages poor coding practices (one big C file when independent C++ classes are easily doable in PlatformIO).
+
 **2021-03-08**
 
 The little bearings have arrived, as has a pair of chunkier servos, MG996R. They can shift about 10kg cm. But I'll save them, at least for now, see if I can get a bit further using the SG90s. 

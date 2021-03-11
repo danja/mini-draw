@@ -1,4 +1,8 @@
 #include <Arduino.h>
+#include <utility>   // for pair
+
+// http://www.cplusplus.com/reference/utility/pair/pair/
+
 //#include <math.h> //for Arduino IDE
 // #include "hardware/tools/avr/avr/include/math.h" //for vscode
 #include <Servo.h>
@@ -184,18 +188,6 @@ void move_to(double x, double y)
 
 void setup()
 {
-  pinMode(DEBUG_LED_CALC, OUTPUT);
-  pinMode(DEBUG_LED_LIFTED, OUTPUT);
-  pinMode(DEBUG_LED_LIFTING, OUTPUT);
-  pinMode(DEBUG_LED_PUTTING_DOWN, OUTPUT);
-  pinMode(DEBUG_LED_LINE, OUTPUT);
-
-  digitalWrite(DEBUG_LED_CALC, LOW);
-  digitalWrite(DEBUG_LED_LIFTED, HIGH);
-  digitalWrite(DEBUG_LED_LIFTING, LOW);
-  digitalWrite(DEBUG_LED_PUTTING_DOWN, LOW);
-  digitalWrite(DEBUG_LED_LINE, LOW);
-  
   servo_A.attach(S1_PIN);
   servo_B.attach(S2_PIN);
   servo_P.attach(S3_PIN);
@@ -240,8 +232,4 @@ pen_down();
 void loop()
 {
   delay(1000);
-}
-
-class Pair {
-  public
 }

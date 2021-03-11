@@ -8,7 +8,9 @@ A [SCARA](https://en.wikipedia.org/wiki/SCARA) robot using an Arduino, servos an
 
 More details in [devlog.md](devlog.md)
 
-**2021-03-06** Made a rough prototype, played with some of the calculations to simulate behaviour, ordered some more parts...
+**2021-03-11** After making a very rough first prototype which flagged up loads of little problems, I've started working on another version taking these into account.
+
+I've not used any CAD for years so in the interests of speed I hand-drew a template for the new arms.
 
 ## Design
 
