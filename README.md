@@ -12,6 +12,14 @@ More details in [devlog.md](devlog.md)
 
 I've not used any CAD for years so in the interests of speed I hand-drew a ![template](https://github.com/danja/mini-draw/blob/main/images/arms-design_2021-03-11.pdf) for the new arms, currently making these.
 
+This is the first prototype: 
+
+![prototype v1](https://github.com/danja/mini-draw/blob/main/images/early-top-view.jpeg)
+
+I only did enough code to check the general behaviour. Which wasn't too wonderful:
+
+![first lines](https://github.com/danja/mini-draw/blob/main/images/first-lines.jpeg)
+
 ## Design
 
 The obvious way of making a plotter is with stepper motors driving linear screws for the X-Y axes & one servo to lift the pen. But searching around I found a servo-based design that seemed a lot more interesting, a [Mini Drawing Bot](https://www.instructables.com/Mini-Drawing-Bot-Live-Android-App-Trignomentry/) by [Jegatheesan Soundarapandian](https://www.instructables.com/member/jegatheesan.soundarapandian/). (He also has made a truly wonderful little [walking robot](https://www.instructables.com/Baby-MIT-Cheetah-Robot-V2-Autonomous-and-RC/) using the same mechanism as the drawing bot for each leg).
