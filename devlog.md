@@ -15,6 +15,13 @@ I've made a start on making some, [template](https://github.com/danja/mini-draw/
 
 I've a rough idea of what to do for supports, a little trial & error will again be needed. I'll start by using the existing pen lifter but this will almost certainly need replacing, it's quite wobbly.
 
+Thinking about making the drawings more accurate by other means, some kind of feedback might be desirable. It would be possible to pop open the servos, disable internal control, and route their potentiometers through the microcontroller, but I'm not sure that's worth bothering with for this toy machine.
+
+Independent feedback from the pen position could be fun. My first thought was to use a [MPU-6050 Accelerometer + Gyro](https://playground.arduino.cc/Main/MPU-6050/) (I have one) but on reading round, it seems they're ill-suited for position measurement. It's not impossible, but things like the double-integration needed for acceleration -> position introduce huge amounts of drift. Apparently, if you can constrain the expected behaviour then [Kalman filters](https://en.wikipedia.org/wiki/Kalman_filter) the errors can be minimised to some extent. But it still sounds like a lot of work for little benefit.
+
+Another possibility would be to use ultrasonic distance sensors like the [HC-SR04](https://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/) (I also have some of these). The added weight of using one for each of x & y axes as well as having to have a reflective surface to take the distance from, this probably isn't suitable for a permanent setup. But it might well be worth trying just for calibration - just use one, first for x, then for y.  
+
+
 **2021-03-09**
 
 Reckon I'm going to pull out the (angleA, angleB) => (x, y) function out of Andrés Zibula's code, refactor it as a function taking & returning a std:pair.
