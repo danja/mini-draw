@@ -71,12 +71,10 @@ Making the angles vary 60-120 degrees gave something a little better, but strang
 
 The calculations are quite long-winded so my guess was the distortion was down to inadequate precision in my code. But I modified the code to use the ```mpmath``` library, I believe using 1,000 decimal places (!) and still got a strange result.  
 
-![forward](https://github.com/danja/mini-draw/blob/main/images/imprecise.png?raw=true)
+![forward](https://github.com/danja/mini-draw/blob/main/images/precise_10-10-10.png?raw=true)
 
-**Ok, whatever.** I think I'll leave that bit there, have a crack at coding the inverse kinematics. Might be interesting to see what happens if I do forward-then-inverse, see what distortion appears there.
+Noting that the top-right quadrant of my results appeared pretty much how it should be -
 
-https://en.wikipedia.org/wiki/Five-bar_linkage
+![cropped](https://github.com/danja/mini-draw/blob/main/images/precise-cropped.png)
 
-https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/5R_robot.gif/220px-5R_robot.gif
-
-
+I revised the [code](https://github.com/danja/mini-draw/tree/main/sums) just to show this corner and flip it. Very hacky, but did allow a bit of progress. Unfortunately, when I returned to the Jupyter Notebook later, it'd stopped working - I must have had some global variables lurking before... So I'm leaving that for now.
