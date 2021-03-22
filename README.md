@@ -2,9 +2,11 @@
 
 A [SCARA](https://en.wikipedia.org/wiki/SCARA) robot using an Arduino, servos and hand cut aluminium sheet. 
 
-*Details will appear here of design/construction, a bit more background will be in a [blog post](https://dannyayers.wordpress.com/2021/03/01/simple-drawing-robot-python-sums-weirdness/).*
-
 ## Status
+
+Revised hardware, close to working.
+
+Video : https://www.youtube.com/watch?v=ijvBr-nKirs
 
 More details in [devlog.md](devlog.md)
 
@@ -43,4 +45,19 @@ Where **O** and **B** are the person's shoulders, **A** and **C** their elbows a
 Here the 'shoulders' will each be attached to a servo, the 'elbows' loose joints and the 'hands' a servo that will lift the pen up and down. 
 
 ![animation](https://github.com/danja/mini-draw/blob/main/images/5R_robot.gif)
+
+## Glossary
+
+*move this elsewhere later*
+
+**[end effector](https://en.wikipedia.org/wiki/Robot_end_effector)** - the device at the end of a robotic arm (here, the pen)
+
+**[distal](https://en.wikipedia.org/wiki/Anatomical_terms_of_location)** - a thing further away from the body (here, the arms farther from the servo)
+
+**[prismatic joint](https://en.wikipedia.org/wiki/Prismatic_joint)** - a slider 
+
+**[proximal](https://en.wikipedia.org/wiki/Anatomical_terms_of_location)** - a thing nearer the body (here, the arms nearer the servo)
+
+**[revolute joint](https://en.wikipedia.org/wiki/Revolute_joint)** - a rotary joint or hinge 
+
 

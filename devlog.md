@@ -21,6 +21,8 @@ Independent feedback from the pen position could be fun. My first thought was to
 
 Another possibility would be to use ultrasonic distance sensors like the [HC-SR04](https://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/) (I also have some of these). The added weight of using one for each of x & y axes as well as having to have a reflective surface to take the distance from, this probably isn't suitable for a permanent setup. But it might well be worth trying just for calibration - just use one, first for x, then for y.  
 
+And...what about a laser and detector mounted by the pen, with a page printed with registration marks (or a grid for calibration)? Hmm, maybe use a black workspace with blank pages cut to target size..?
+
 
 **2021-03-09**
 
