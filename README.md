@@ -4,7 +4,7 @@ A [SCARA](https://en.wikipedia.org/wiki/SCARA) robot using an Arduino, servos an
 
 ## Status
 
-Revised hardware, close to working.
+Revised hardware, close to working. Back to software.
 
 Video : https://www.youtube.com/watch?v=ijvBr-nKirs
 

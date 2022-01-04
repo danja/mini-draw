@@ -1,3 +1,5 @@
+# HOW DID THIS EVER WORK!
+
 # 5-Bar Linkage : Inverse Kinematics
 #
 # from Study and Development of Parallel Robots Based On 5-Bar Linkage
@@ -28,12 +30,12 @@ for x in xArray:
         F4 = 2*humerus*y
         G4 = base*base + humerus*humerus - radius*radius + x*x + y*y - 2*base*x
 
-        lumpD1plus = (-F1+sqrt(E1*E1+F1*F1-G1*G1))/(G1-E1)
-        lumpD1minus = (-F1-sqrt(E1*E1+F1*F1-G1*G1))/(G1-E1)
-        lumpD4plus = (-F4+sqrt(E4*E4+F4*F4-G4*G4))/(G4-E4)
-        lumpD4minus = (-F4-sqrt(E4*E4+F4*F4-G4*G4))/(G4-E4)
+        lumpD1plus = (-F1+math.sqrt(E1*E1+F1*F1-G1*G1))/(G1-E1)
+        lumpD1minus = (-F1-math.sqrt(E1*E1+F1*F1-G1*G1))/(G1-E1)
+        lumpD4plus = (-F4+math.sqrt(E4*E4+F4*F4-G4*G4))/(G4-E4)
+        lumpD4minus = (-F4-math.sqrt(E4*E4+F4*F4-G4*G4))/(G4-E4)
 
-        D1plus = 2*atan(lumpD1plus)
-        D1minus = 2*atan(lumpD1minus)
-        D4plus = 2*atan(lumpD4plus)
-        D4minus = 2*atan(lumpD4minus)
+        D1plus = 2*math.atan(lumpD1plus)
+        D1minus = 2*math.atan(lumpD1minus)
+        D4plus = 2*math.atan(lumpD4plus)
+        D4minus = 2*math.atan(lumpD4minus)

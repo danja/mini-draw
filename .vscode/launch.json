@@ -29,6 +29,16 @@
             "projectEnvName": "mini-draw",
             "toolchainBinDir": "/home/danny/.platformio/packages/toolchain-atmelavr/bin",
             "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug (without uploading)",
+            "executable": "/home/danny/micros/mini-draw/.pio/build/mini-draw/firmware.elf",
+            "projectEnvName": "mini-draw",
+            "toolchainBinDir": "/home/danny/.platformio/packages/toolchain-atmelavr/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "loadMode": "manual"
         }
     ]
 }

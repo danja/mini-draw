@@ -29,14 +29,44 @@ void penUp();
 void penDown();
 void moveServos(int angleLeft, int angleRight);
 
-void go(){
+void go()
+{
     Serial.println("go");
     home();
+
     penDown();
-moveServos(115, 50);
-moveServos(114, 61);
-moveServos(133, 88);
-moveServos(150, 82);
+
+    // hexagon
+    moveServos(115, 50);
+    moveServos(114, 61);
+    moveServos(109, 81);
+    moveServos(133, 88);
+    moveServos(150, 82);
+    moveServos(140, 65);
+
+    penUp();
+
+    // centre cross
+    moveServos(125, 70);
+    penDown();
+    moveServos(135, 80);
+    penUp();
+    moveServos(125, 80);
+    penDown();
+    moveServos(135, 70);
+
+    // star
+    penUp();
+    moveServos(114, 61);
+    penDown();
+    moveServos(133, 88);
+    moveServos(140, 65);
+    penUp();
+    moveServos(115, 50);
+    penDown();
+    moveServos(109, 81);
+    moveServos(150, 82);
+    home();
 }
 
 void setup()
@@ -50,19 +80,19 @@ void setup()
 
 void loop()
 {
-   go();
+    // go();
     delay(1000);
 }
 
 void moveServos(int angleLeft, int angleRight)
 {
-   
-Serial.print("Move Servos to : (");
-Serial.print(angleLeft);
-Serial.print(", (");
-Serial.print(angleRight);
-Serial.print(")\n");
-   
+
+    Serial.print("Move Servos to : (");
+    Serial.print(angleLeft);
+    Serial.print(", (");
+    Serial.print(angleRight);
+    Serial.print(")\n");
+
     float previousLeft = servoLeft.read(); // last value written (cast to float)
     float previousRight = servoRight.read();
 
@@ -76,7 +106,7 @@ Serial.print(")\n");
     {
         currentLeft += stepLeft;
         currentRight += stepRight;
- 
+
         servoLeft.write(currentLeft);
         servoRight.write(currentRight);
         delay(ANGLE_DELAY);
@@ -85,7 +115,7 @@ Serial.print(")\n");
 
 void penUp()
 {
-
+    Serial.println("Pen Up");
     /*
     int i = servoPen.read(); // last value written
     Serial.println(i);
@@ -97,13 +127,14 @@ void penUp()
         delay(PEN_DELAY);
     }
     */
-   servoPen.write(0);
+    servoPen.write(0);
 }
 
 void penDown() // later : combine with above
 {
-     servoPen.write(180);
-     /*
+    Serial.println("Pen Down");
+    servoPen.write(180);
+    /*
     int i = servoPen.read(); // last value written
     while (i != PEN_DOWN_ANGLE)
     {
@@ -116,8 +147,8 @@ void penDown() // later : combine with above
 
 void home()
 {
- 
+
     penUp();
     moveServos(HOME_LEFT, HOME_RIGHT);
-    delay(PEN_DELAY+ANGLE_DELAY);
+    delay(PEN_DELAY + ANGLE_DELAY);
 }
