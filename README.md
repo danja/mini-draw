@@ -1,8 +1,14 @@
 # Simple Arduino Pen Plotter
 
-A [SCARA](https://en.wikipedia.org/wiki/SCARA) robot using an Arduino, servos and hand cut aluminium sheet. 
+A [SCARA](https://en.wikipedia.org/wiki/SCARA) robot using an Arduino, cheap servos and hand cut aluminium sheet.
 
-## Status
+This now archived, before really being finished.
+
+I've moved onto a third version of the hardware using an ESP32 microcontroller (and much better servos) to simplify Web control of the thing. Because of these changes I've called it a new project, see https://github.com/danja/webplot
+
+Other folks have succeeded in building similar machines using the little plastic SG90 servos (eg. see [Mini Drawing Bot](https://www.instructables.com/Mini-Drawing-Bot-Live-Android-App-Trignomentry/) by [Jegatheesan Soundarapandian](https://www.instructables.com/member/jegatheesan.soundarapandian/)) but the 4mm aluminium I was using for the arms is simply too heavy for them.
+
+## Status : ARCHIVED
 
 Revised hardware, close to working. Back to software.
 
@@ -16,7 +22,7 @@ I also played around with [simulating the forward kinematics](https://github.com
 
 I've not used any CAD for years so in the interests of speed I hand-drew a [template](https://github.com/danja/mini-draw/blob/main/images/arms-template_2021-03-11.pdf) for the new arms, currently making these.
 
-This is the first prototype: 
+This is the first prototype:
 
 ![prototype v1](https://github.com/danja/mini-draw/blob/main/images/early-top-view.jpeg)
 
@@ -28,7 +34,7 @@ I only did enough code to check the general behaviour. Which wasn't too wonderfu
 
 The obvious way of making a plotter is with stepper motors driving linear screws for the X-Y axes & one servo to lift the pen. But searching around I found a servo-based design that seemed a lot more interesting, a [Mini Drawing Bot](https://www.instructables.com/Mini-Drawing-Bot-Live-Android-App-Trignomentry/) by [Jegatheesan Soundarapandian](https://www.instructables.com/member/jegatheesan.soundarapandian/). (He also has made a truly wonderful little [walking robot](https://www.instructables.com/Baby-MIT-Cheetah-Robot-V2-Autonomous-and-RC/) using the same mechanism as the drawing bot for each leg).
 
-*If I was to make a drawing robot designed to be practical but inexpensive compared to full-on ball & screw systems, I'd follow the ingenious technique from one of the authors of the paper referred to below, described in [Study and Design of Control Belt Driven 2D CNC Systems](https://www.academia.edu/13297276/STUDY_DESIGN_AND_CONTROL_BELT_DRIVEN_2_D_CNC_SYSTEMS)* [T.S. Dinh Le and C.B. Pham, 2013]
+_If I was to make a drawing robot designed to be practical but inexpensive compared to full-on ball & screw systems, I'd follow the ingenious technique from one of the authors of the paper referred to below, described in [Study and Design of Control Belt Driven 2D CNC Systems](https://www.academia.edu/13297276/STUDY_DESIGN_AND_CONTROL_BELT_DRIVEN_2_D_CNC_SYSTEMS)_ [T.S. Dinh Le and C.B. Pham, 2013]
 
 ## Mechanism
 
@@ -42,22 +48,20 @@ If you imagine a person with their arms flat on a table, holding their hands tog
 
 Where **O** and **B** are the person's shoulders, **A** and **C** their elbows and **P** is the pen.
 
-Here the 'shoulders' will each be attached to a servo, the 'elbows' loose joints and the 'hands' a servo that will lift the pen up and down. 
+Here the 'shoulders' will each be attached to a servo, the 'elbows' loose joints and the 'hands' a servo that will lift the pen up and down.
 
 ![animation](https://github.com/danja/mini-draw/blob/main/images/5R_robot.gif)
 
 ## Glossary
 
-*move this elsewhere later*
+_move this elsewhere later_
 
 **[end effector](https://en.wikipedia.org/wiki/Robot_end_effector)** - the device at the end of a robotic arm (here, the pen)
 
 **[distal](https://en.wikipedia.org/wiki/Anatomical_terms_of_location)** - a thing further away from the body (here, the arms farther from the servo)
 
-**[prismatic joint](https://en.wikipedia.org/wiki/Prismatic_joint)** - a slider 
+**[prismatic joint](https://en.wikipedia.org/wiki/Prismatic_joint)** - a slider
 
 **[proximal](https://en.wikipedia.org/wiki/Anatomical_terms_of_location)** - a thing nearer the body (here, the arms nearer the servo)
 
-**[revolute joint](https://en.wikipedia.org/wiki/Revolute_joint)** - a rotary joint or hinge 
-
-
+**[revolute joint](https://en.wikipedia.org/wiki/Revolute_joint)** - a rotary joint or hinge
